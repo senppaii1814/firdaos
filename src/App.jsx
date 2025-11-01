@@ -143,7 +143,7 @@ function HomePage() {
 
       {/* Developer Logos Section */}
       <section className="developer-logos">
-        <Link to="/projects" className="see-properties-link">See the properties listed ></Link>
+        <Link to="/projects" className="see-properties-link">See the properties listed &gt;</Link>
         <div className="logos-grid">
           <div className="logo-item">
             <img src="/logos/emaar.svg" alt="EMAAR" className="logo-image" />
