@@ -13,10 +13,9 @@ function HomePage() {
   const [showWalletModal, setShowWalletModal] = useState(false);
   const [countdown, setCountdown] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
 
-  // Set target date to 30 days from now
+  // Set target date to November 18th
   useEffect(() => {
-    const targetDate = new Date();
-    targetDate.setDate(targetDate.getDate() + 30);
+    const targetDate = new Date('2024-11-18T23:59:59');
 
     const interval = setInterval(() => {
       const now = new Date().getTime();
