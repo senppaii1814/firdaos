@@ -12,19 +12,19 @@ function WalletModal({ isOpen, onClose, onConnect }) {
       id: 'metamask',
       name: 'MetaMask',
       description: 'Connect using MetaMask',
-      icon: <img src="/logos/metamask.svg" alt="MetaMask" width="32" height="32" />
+      icon: <img src="/logos/metamask.svg" alt="MetaMask" width="32" height="32" onError={(e) => { e.target.style.display = 'none'; }} />
     },
     {
       id: 'trust',
       name: 'Trust Wallet',
       description: 'Connect using Trust Wallet',
-      icon: <img src="/logos/trustwallet.png" alt="Trust Wallet" width="32" height="32" />
+      icon: <img src="/logos/trustwallet.png" alt="Trust Wallet" width="32" height="32" onError={(e) => { e.target.style.display = 'none'; }} />
     },
     {
       id: 'binance',
       name: 'Binance Wallet',
       description: 'Connect with BNB wallet',
-      icon: <img src="/logos/bnb-coin.svg" alt="BNB" width="32" height="32" />
+      icon: <img src="/logos/bnb-coin.svg" alt="BNB" width="32" height="32" onError={(e) => { e.target.style.display = 'none'; }} />
     }
   ];
 
